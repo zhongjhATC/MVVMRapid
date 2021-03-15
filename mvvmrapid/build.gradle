@@ -61,4 +61,12 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+
+    // material-dialogs
+    api(rootProject.ext.dependencies["material-dialogs-core"]) {
+        exclude group: 'com.android.support'
+    }
+    api(rootProject.ext.dependencies["material-dialogs-commons"]) {
+        exclude group: 'com.android.support'
+    }
 }
